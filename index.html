@@ -2,8 +2,8 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/styles.css" />
   <title>Google Clone</title>
 </head>
@@ -19,11 +19,17 @@
         <li>
           <a href="#">Imágenes</a>
         </li>
-        <a class="header__icon-apps"></a>
-        <figure class="header__profile-pictureContainer">
-          <img class="header__profile-picture" src="./images/profile-picture.jpg"
-            srcset="./images/profile-picture.jpg, ./images/profile-picture@2x.jpg 2x" width="40" alt="Foto de perfil" />
-        </figure>
+        <li>
+          <a class="header__icon-apps"></a>
+        </li>
+        <li>
+          <figure class="header__profile-pictureContainer">
+            <img class="header__profile-picture" src="./images/profile-picture.jpg" srcset="
+                  ./images/profile-picture.jpg,
+                  ./images/profile-picture@2x.jpg 2x
+                " width="40" alt="Foto de perfil" />
+          </figure>
+        </li>
       </ul>
     </nav>
   </header>
@@ -32,18 +38,28 @@
   <!-- Main -->
   <main class="main">
     <div class="search-content">
-      <figure class="search-content__google-logoContainer">
-        <img class="search-content__google-logo" src="./images/google-logo.svg" width="300" alt="Google" />
-      </figure>
-      <div class="search-content__inputContainer">
-        <div class="search-icon"></div>
-        <input class="search-content__input" type="text" />
-        <div class="voice-icon"></div>
-      </div>
-      <div class="buttonsContainer">
-        <button class="search-content__button" type="button">Buscar con Google</button>
-        <button class="search-content__button" type="button">I´m Feeling Lucky</button>
-      </div>
+      <section class="main-logo">
+        <img src="./images/google-logo.svg" width="300" alt="Google" />
+      </section>
+      <section class="main-input">
+        <div class="main-inputContainer">
+          <span class="search-icon"></span>
+          <input type="text" />
+          <a class="voice-icon"></a>
+        </div>
+      </section>
+      <section class="main-buttons">
+        <div>
+          <button type="button">
+            Buscar con Google
+          </button>
+        </div>
+        <div>
+          <button type="button">
+            Me siento con suerte
+          </button>
+        </div>
+      </section>
     </div>
   </main>
   <!-- /Main -->
@@ -62,7 +78,7 @@
           <a href="#">Acerca de</a>
         </li>
         <li>
-          <a href="#">Cómo funciona la Búsqueda</a>
+          <a href="#">Cómo funciona la búsqueda</a>
         </li>
       </ul>
     </section>
